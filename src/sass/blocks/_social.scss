@@ -1,0 +1,39 @@
+.social {
+    padding: 100px 0;
+    width: 350px;
+    margin: 0 auto;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__circle {
+        height: 40px;
+        width: 40px;
+        border: 1px solid #000000;
+        border-radius: 100%;
+        color: #000000;
+        display: flex;
+		justify-content: center;
+		align-items: center;
+        font-size: 20px;
+        transition: 0.5s all;
+		&:hover {
+            scale: 1.05;
+			color: #000000;
+			box-shadow: 0 0 5px #444444;
+        }
+        .icon-instagram:before {
+            content: "\ea92";
+        }
+        .icon-facebook:before {
+            content: "\ea90";
+        }
+        .icon-telegram1:before {
+            content: "\e900";
+        }
+        .icon-behance:before {
+            content: "\eaa8";
+        }
+    }
+}

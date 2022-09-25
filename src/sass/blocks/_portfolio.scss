@@ -1,0 +1,21 @@
+.portfolio {
+	padding-top: 65px;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 415px);
+		column-gap: 30px;
+		justify-content: space-between;
+	}
+	&__column {
+		display: grid;
+		grid-template-rows: max-content;
+		grid-auto-rows: max-content;
+		row-gap: 30px;
+	}
+	&__photo {
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
