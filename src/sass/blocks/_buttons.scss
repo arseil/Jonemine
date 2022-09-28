@@ -1,19 +1,24 @@
 .btn {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 50px;
-    width: 200px;
-    border: 1px solid #000000;
-    border-radius: 40px;
-    background-color: #ffffff;
-    font-size: 13px;
-    transition: 0.5s all;
-    &:hover {
-        background-color: #000000;
-        color: #ffffff;
-        scale: 1.03;
-        box-shadow: 0 0 5px #444444;
-    }
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50px;
+	width: 200px;
+	border: 1px solid #000000;
+	border-radius: 40px;
+	background-color: #ffffff;
+	font-size: 13px;
+	transition: 0.5s all;
+	&:hover {
+		background-color: #000000;
+		color: #ffffff;
+		scale: 1.03;
+		box-shadow: 0 0 5px #444444;
+	}
+	&_modal {
+		bottom: 30px;
+		width: 150px;
+		background-color: #F2F2F2;
+	}
 }
