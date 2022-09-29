@@ -17,7 +17,7 @@ $(document).ready(function() {
 				phone: "required",
 				date: "required",
 				text: "required",
-				checkbox: "required",
+				checkbox: "required"
 			},
 			messages: {
 				name: {
@@ -27,7 +27,7 @@ $(document).ready(function() {
 				phone: "Пожалуйста, введите свой номер телефона",
 				date: "Пожалуйста, выберите дату",
 				text: "Пожалуйста, оставьте сообщение",
-				checkbox: "Это поле обязательно",
+				checkbox: "Это поле обязательно"
 			}
 		});
 	}
@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "POST",
-			url: 'mailer/smart.php',
+			url: "mailer/smart.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
@@ -55,6 +55,4 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
-	new WOW().init();
 });

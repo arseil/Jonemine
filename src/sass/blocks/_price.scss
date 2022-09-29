@@ -8,6 +8,9 @@
     }
     &__item {
         position: relative;
+        display: grid;
+        grid-template-rows: max-content;
+        row-gap: 40px;
         &:after {
             content: '';
             width: 2px;
@@ -27,21 +30,20 @@
         }
     }
     &__title {
+        height: 30px;
         font-size: 23px;
         text-align: center;
     }
     &__photo {
-        margin-top: 25px;
 		img {
 			width: 100%;
 			object-fit: cover;
 		}
     }
     &__cost {
-        margin-top: 20px;
         text-align: center;
     }
     &__descr {
-        margin: 20px 0 150px 0;
+        margin-bottom: 150px;
     }
 }
