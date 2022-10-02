@@ -2,7 +2,7 @@
 	padding-top: 65px;
 	&__wrapper {
 		display: grid;
-		grid-template-columns: repeat(4, 415px);
+		grid-template-columns: repeat(4, 1fr);
 		column-gap: 30px;
 		justify-content: space-between;
 	}
@@ -17,5 +17,8 @@
 			width: 100%;
 			object-fit: cover;
 		}
+	}
+	&__item {
+		position: relative;
 	}
 }

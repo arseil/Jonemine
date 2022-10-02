@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,9 +48,9 @@
 		<nav>
 			<div class="container">
 				<ul class="menu">
-					<li class="menu__item"><a href="/index.html" class="menu__link">Jonemine</a></li>
-					<li class="menu__item"><a href="/price.html" class="menu__link">Price</a></li>
-					<li class="menu__item"><a href="/about.html" class="menu__link">About</a></li>
+					<li class="menu__item"><a href="/index.html" class="menu__link">Ольга Гречихо</a></li>
+					<li class="menu__item"><a href="/price.html" class="menu__link">Стоимость</a></li>
+					<li class="menu__item"><a href="/about.html" class="menu__link">Обо мне</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -60,41 +60,45 @@
 		<div class="container">
 			<div class="about__wrapper">
 				<div class="about__photo">
-					<img src="img/about/IMG_2896.PNG" alt="photo">
+					<picture>
+						<source type="image/webp" media="(max-width: 576px)" srcset="img/about/IMG_2896_min.webp">
+						<source type="image/webp" media="(min-width: 577px)" srcset="img/about/IMG_2896.webp">
+						<img src="img/about/IMG_2896.PNG" alt="photo">
+					</picture>
 				</div>
 				
 				<div class="about__block">
-					<h1 class="about__title">Olga Grechiho</h1>
-					<h2 class="about__subtitle">Photographer based in Minsk, Belarus. Available Worldwide</h2>
+					<h1 class="about__title">Ольга Гречихо</h1>
+					<h2 class="about__subtitle">Фотограф из Минска, Беларусь. Доступно по всему миру</h2>
 					<div class="about__contacts">
-						Contact me for booking a shooting
+						Свяжитесь со мной для заказа съемки
 						<br><br>
-						Open for collaborations and other requests
+						Открыта для сотрудничества и других запросов
 						<br><br>
 						<a href = "mailto: jonemineee@gmail.com">jonemineee@gmail.com</a>
 					</div>
 					<div class="about__exhibitions">
-						<h2>Exhibitions:</h2>
+						<h2>Выставки:</h2>
 						<p>
-							"Art Minsk 2022" Minsk, Belarus
+							"Арт Минск 2022" Минск, Беларусь
 							<br>
-							"FotoOpen" 2019 Bielsko-Biale, Poland
+							"FotoOpen" 2019 Бельско Бяле, Польша
 						</p>
 					</div>
 					<div class="about__exhibitions">
-						<h2>Worked with:</h2>
+						<h2>Работала с:</h2>
 						<p>
-							Max Mara Belarus
+							Макс Мара Беларусь
 							<br>
-							Nagorny models, Inmodels (Belarus), R&R (Israel) model agencies
+							Модельные агентства Nagorny models, Inmodels (Беларусь), R&R (Израиль)
 						</p>
 					</div>
 					<div class="about__exhibitions">
-						<h2>Other experiences:</h2>
+						<h2>Другой опыт:</h2>
 						<p>
-							2017 —2020 Photographer at University of Silesia (Poland) magazine "Suplement" 
+							2017 —2020 Фотограф Силезского Университета (Польша) журнал "Дополнение" 
 							<br>
-							June 2022 Gave first lecture on photography to an audience in Minsk
+							Июнь 2022 Прочитал первую лекцию по фотографии перед аудиторией в Минске.
 						</p>
 					</div>
 				</div>
@@ -110,7 +114,14 @@
 			<a href="https://t.me/jonemine" class="social__circle"><span class="icon-telegram1"></span></a>
 			<a href="https://www.behance.net/olgagrechiho" class="social__circle"><span class="icon-behance"></span></a>
 		</div>
+		<div class="social__copyright">© Copyright 2022. Olga Grechiho</div>
 	</footer>
+
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

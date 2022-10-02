@@ -75,7 +75,6 @@
 			color: red;
 			text-align: center;
 			font-size: 12px;
-			margin-bottom: 10px;
 			top: 11px;
 			left: 130px;
 		}
@@ -110,7 +109,10 @@
 		}
 	}
 	&__policy {
-		font-size: 14px;
+		display: flex;
+		justify-content: space-around;
+		width: 170px;
+		font-size: 12px;
 		line-height: 16px;
 		text-align: center;
 		position: absolute;
@@ -122,8 +124,10 @@
 			background-color: #F2F2F2;
 		}
 		label.error {
-			top: 22px;
-			left: 40px;
+			width: 100%;
+			top: 38px;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 		a {
 			text-decoration: underline;
