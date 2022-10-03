@@ -1,6 +1,5 @@
 .btn {
 	display: grid;
-	/* flex-wrap: wrap; */
 	grid-template-rows: auto;	
 	justify-content: center;
 	align-items: center;
@@ -14,6 +13,7 @@
 	border-radius: 40px;
 	background-color: #ffffff;
 	font-size: 15px;
+	color: #000000;
 	transition: 0.5s all;
 	&:hover {
 		background-color: #000000;
@@ -22,6 +22,11 @@
 		box-shadow: 0 0 5px #444444;
 	}
 	&_modal {
+		display: block;
+		margin: 10px auto 0 auto;
+		left: unset;
+		transform: unset;
+		position: unset;
 		bottom: 30px;
 		width: 150px;
 		background-color: #F2F2F2;
@@ -29,7 +34,8 @@
 	&__portfolio {
 		bottom: 7px;
 		height: 20px;
-		width: 100px;
+		padding: 0 10px 0 10px;
+		width: auto;
 		border: none;
 		background-color: #ffffff;
 		font-size: 17px;

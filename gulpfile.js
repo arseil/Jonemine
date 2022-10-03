@@ -15,6 +15,7 @@ gulp.task('server', function() {
 	});
 
 	gulp.watch("src/*.html").on('change', browserSync.reload);
+	gulp.watch("src/views/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
@@ -28,11 +29,12 @@ gulp.task('styles', function() {
 			.pipe(cleanCSS({compatibility: 'ie8'}))
 			.pipe(gulp.dest("dist/css"))
 			.pipe(browserSync.stream());
-})
+});
 
 gulp.task('watch', function() {
 	gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
 	gulp.watch("src/*.html").on('change', gulp.parallel('html'));
+	gulp.watch("src/views/*.html").on('change', gulp.parallel('views'));
 	gulp.watch("src/js/**/*.js").on('change', gulp.parallel('scripts'));
 	gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'));
 	gulp.watch("src/icons/**/*").on('all', gulp.parallel('icons'));
@@ -43,6 +45,12 @@ gulp.task('html', function() {
 	return gulp.src("src/*.html")
 		.pipe(htmlmin({ collapseWhitespace: true }))
 		.pipe(gulp.dest("dist/"));
+});
+
+gulp.task('views', function() {
+	return gulp.src("src/views/*.html")
+		.pipe(htmlmin({ collapseWhitespace: true }))
+		.pipe(gulp.dest("dist/views/"));
 });
 
 gulp.task('scripts', function() {
@@ -77,4 +85,4 @@ gulp.task('images', function() {
 		.pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'mailer', 'images'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'views', 'scripts', 'fonts', 'icons', 'mailer', 'images'));

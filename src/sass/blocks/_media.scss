@@ -1,6 +1,6 @@
-@media (max-width: 1500px) {
+@media (max-width: 1760px) {
 	.container {
-		width: 1400px;
+		width: 1560px;
 	}
 	.portfolio {
 		&__wrapper {
@@ -20,9 +20,15 @@
 	
 }
 
+@media (max-width: 1600px) {
+	.container {
+		width: 1399px;
+	}
+}
+
 @media (max-width: 1439px) {
 	.container {
-		width: 1100px;
+		width: 1160px;
 	}
 	.price {
 		&__wrapper {
@@ -39,13 +45,13 @@
 
 @media (max-width: 1200px) {
 	.container {
-		max-width: 960px;
+		max-width: 952px;
 	}
 }
 
 @media (max-width: 992px) {
 	.container {
-		max-width: 720px;
+		max-width: 728px;
 	}
 	.portfolio {
 		&__wrapper {
@@ -96,6 +102,9 @@
 	.container {
 		max-width: 540px;
 	}
+	.menu {
+		justify-content: center;
+	}
 	.portfolio {
 		&__wrapper {
 			grid-template-columns: repeat(2, 1fr);
@@ -138,12 +147,10 @@
 		height: 40px;
 	}
 	.menu {
-		grid-template-columns: repeat(3, auto);
-		justify-content: start;
-		column-gap: 10px;
-		padding: 25px 0 0 10px;
+		column-gap: 12px;
+		padding: 25px 0 0 0;
 		&__link {
-			font-size: 15px;
+			font-size: 16px;
 		}
 	}
 	.portfolio {
@@ -212,16 +219,67 @@
 		}
 	}
 	.modal {
-		width: 290px;
+		max-height: 90%;
+		max-width: 90%;
 		padding: 10px;
 		&__subtitle {
 			margin-top: 30px;
+			font-size: 14px;
+		}
+		&_mini {
+			min-height: 110px;
 		}
 		&__close {
-			width: 30px;
-			height: 30px;
-			top: 5px;
-			right: 5px;
+			top: 2px;
+			right: 0;
+			&::after {
+				height: 20px;
+			}
+			&::before {
+				width: 20px;
+				transform: rotate(45deg) translate(15px,4px);
+			}
+		}
+		&__form {
+			margin-top: 0;
+			label {
+				top: 13px;
+				height: 14px;
+			}
+			label.error {
+				margin-top: 5px;
+				font-size: 10px;
+				position: relative;
+				top: unset;
+    			left: unset;
+			}
+		}
+		&__textarea {
+			textarea {
+				height: 15vh;
+			}
+			label.error {
+				margin-top: 0;
+			}
+		}
+		&__policy {
+			label.error {
+				margin-top: unset;
+				position: absolute;
+				top: 38px;
+    			left: 50%;
+			}
+		}
+	}
+	.btn {
+		&_modal {
+			height: 35px;
+		}
+	}
+	.social {
+		padding: 50px 0 10px 0;
+		&__copyright {
+			padding-top: 50px;
 		}
 	}
 }
